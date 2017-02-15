@@ -41,7 +41,7 @@ body {
     
 }
 #nav >ul >button:hover {
-   background-color: darkorange; 
+   background-color: brown; 
     
 }
 
@@ -53,7 +53,9 @@ body {
     margin:0;
 }
 #middle-wrapper-width {
- display: flex;
+ display: flex;  
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 #middle-wrapper {
@@ -61,16 +63,78 @@ body {
 }
 
 
+.side-by-side{
+   display: flex 
+    }
 
-#main-content-wrapper{
-   background-color: greenyellow;
-    width:80%
+
+
+
+#main-content-wrapper .image-content{
+text-align:center;
+    width:50%
+        margin-top:50px;
   }
+.image-content >img {
+        max-width: 200px;
+    border-radius: 50%;
+}
+
+.image-content >h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color:orangered;
+}
+
+.image-content >h4 >a {
+    color: orangered
+}
+.image-content >h4 >a:hover {
+    color:blue
+}
+#main-content-wrapper article {
+    width:50%;
+        margin-top:100px;
+  }
+#main-content-wrapper article h2 {
+ text-align: center
+  }
+#main-content-wrapper article  p{
+    max-width:300px;
+        margin: 0 auto;
+  }
+#main-content-wrapper #skills{
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+#main-content-wrapper #skilla span{
+    text-align: center;
+    font-weight: 400;
+}
+
+
 
 #aside-content-wrapper {
-  background-color: plum;
-    width:20%
-        
+  background-color: white;
+    width:35%
+        font-family:'Lato', sans-serif;    
+}
+#aside-right {
+    margin: 0 50px 0 8px;
+}
+#aside-right h3 {
+    margin: 0 50px 0 8px;
+    text-align: center
+} 
+#latest-work{
+    list-style-type: none;
+}
+
+#latest-work > li{
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: 1px black solid;
 }
 
 footer { 
